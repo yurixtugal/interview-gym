@@ -36,7 +36,7 @@ pnpm run tsx src/hello-world.ts
 ## Progress
 
 - [x] Hello World (Example)
-- [ ] Two Sum
+- [x] Two Sum
 - [ ] Valid Anagram
 - [ ] Contains Duplicate
 - [ ] Best Time to Buy and Sell Stock
