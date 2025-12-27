@@ -37,9 +37,10 @@ pnpm run tsx src/hello-world.ts
 
 - [x] Hello World (Example)
 - [x] Two Sum
+- [x] Best Time to Buy and Sell Stock
+- [x] Best Time to Buy and Sell Stock II
 - [ ] Valid Anagram
 - [ ] Contains Duplicate
-- [ ] Best Time to Buy and Sell Stock
 - [ ] Valid Parentheses
 - [ ] Maximum Subarray
 - [ ] Merge Two Sorted Lists
@@ -50,7 +51,8 @@ pnpm run tsx src/hello-world.ts
 
 ### Arrays
 - Two Sum
-- Best Time to Buy and Sell Stock
+- Best Time to Buy and Sell Stock (Easy - Greedy)
+- Best Time to Buy and Sell Stock II (Medium - Greedy)
 - Contains Duplicate
 - Maximum Subarray
 
