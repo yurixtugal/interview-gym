@@ -39,7 +39,7 @@ describe("maxProfit - Stock II (Multiple Transactions)", () => {
   });
 
   it("should handle multiple peaks and valleys", () => {
-    expect(maxProfit([2, 1, 2, 1, 0, 1, 2])).toEqual(4);
+    expect(maxProfit([2, 1, 2, 1, 0, 1, 2])).toEqual(3);
   });
 
   it("should handle alternating prices", () => {
