@@ -25,22 +25,22 @@
  */
 // Implementation (O(n) time, O(1) extra space excluding output)
 export function productExceptSelf(nums: number[]): number[] {
-  const n = nums.length;
-  const out = new Array<number>(n);
-  if (n === 0) return out;
-
-  out[0] = 1;
-  for (let i = 1; i < n; ++i) {
-    out[i] = out[i - 1] * nums[i - 1];
+  const result: number[] = [];
+  result[0] = 1;
+  
+  for (let i = 1; i < nums.length; i++) {
+    result[i] = result[i-1]*nums[i-1];
+  } 
+  let rightAccum = 1;
+  for (let i = nums.length - 1; i >= 0; i--) {
+    result[i] *= rightAccum;
+    rightAccum *= nums[i];
   }
 
-  let right = 1;
-  for (let i = n - 1; i >= 0; --i) {
-    out[i] *= right;
-    right *= nums[i];
+  // Normalize -0 to +0 so outputs don't show '-0' (JS uses signed zero)
+  for (let i = 0; i < result.length; ++i) {
+    if (result[i] === 0) result[i] = 0
   }
 
-  return out;
+  return result;
 }
-
-export default productExceptSelf
