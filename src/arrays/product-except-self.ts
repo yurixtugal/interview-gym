@@ -23,7 +23,6 @@
  * - Can you solve it in O(n) time without using division?
  * - Can you solve it with constant extra space (excluding the output array)?
  */
-// Implementation (O(n) time, O(1) extra space excluding output)
 export function productExceptSelf(nums: number[]): number[] {
   const result: number[] = [];
   result[0] = 1;
@@ -37,7 +36,6 @@ export function productExceptSelf(nums: number[]): number[] {
     rightAccum *= nums[i];
   }
 
-  // Normalize -0 to +0 so outputs don't show '-0' (JS uses signed zero)
   for (let i = 0; i < result.length; ++i) {
     if (result[i] === 0) result[i] = 0
   }
