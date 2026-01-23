@@ -24,6 +24,8 @@
  * - Can you solve it with constant extra space (excluding the output array)?
  */
 export function productExceptSelf(nums: number[]): number[] {
+  if (nums.length === 0) return []
+
   const result: number[] = [];
   result[0] = 1;
   
